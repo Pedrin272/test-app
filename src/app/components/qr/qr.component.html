@@ -1,0 +1,17 @@
+<qrcode
+  elementType="canvas"
+  errorCorrectionLevel="Q"
+  [qrdata]="value"
+  (qrCodeURL)="onCodeChange($event)"
+  class="bshadow"
+></qrcode>
+
+<form [formGroup]="form">
+  <mat-form-field class="area" appearance="fill">
+    <mat-label>Create Your QR Code!</mat-label>
+    <textarea matInput formControlName="text"></textarea>
+  </mat-form-field>
+  <button mat-flat-button color="warn">
+    <a [href]="url" [download]="dowload">download</a>
+  </button>
+</form>

@@ -1,0 +1,20 @@
+.bshadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(5px 5px 5px #222222);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > .area {
+    margin-top: 10px;
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+}
