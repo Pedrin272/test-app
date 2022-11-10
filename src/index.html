@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>TestApp</title>
+  <title>QR Generator</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -12,5 +12,28 @@
 </head>
 <body class="mat-typography">
   <app-root></app-root>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDiZ_A0ogy4J5sYm3HBAB8qox4GYphJqLE",
+      authDomain: "qrgen-51def.firebaseapp.com",
+      projectId: "qrgen-51def",
+      storageBucket: "qrgen-51def.appspot.com",
+      messagingSenderId: "887489350627",
+      appId: "1:887489350627:web:04dfbd969c0a9fb561eed6",
+      measurementId: "G-ZCCRH03ZT1"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
